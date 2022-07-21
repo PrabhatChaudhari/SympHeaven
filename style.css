@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#myVideo {
+    position: fixed;
+    object-fit: fill;
+    height: 100vh;
+    width: 100%;
+    z-index: -3;
+  }
+
+.curtain{
+    background-color: rgba(0, 0, 0, 0.548);
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+
+/*navigation bar*/
+#stickyNav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-family: roboto;
+}
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+}
+
+#navTitle {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.467);
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-left: 10%;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+  
+#options {
+    margin-right: 11%;
+    display: flex;
+    align-items: center;
+}
+
+.optionsList {
+    display: flex;
+    flex-direction: row;
+}
+
+.listItem {
+    padding: 5px 20px;
+}
+
+.navbarLinks {
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.95);
+    font-weight: bolder;
+}
+
+.homeLink {
+    color: rgba(243, 108, 108, 0.665) !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*navbar2*/
+
+#hamburger {
+    padding: 8px 18px;
+    border: solid rgb(84, 84, 84) 1px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#options2 {
+    background-color: rgb(0, 0, 0, 0.4);
+    margin-top: -14px;
+    display: none;
+}
+
+.optionsList2 {
+    padding: 0px;
+}
+
+.listItem2 {
+    padding: 10px;
+}
+
+.listItem2 a {
+    margin-left: 70px;
+}
+
+.listItem2:hover {
+    background-color: rgba(0, 0, 0, 0.187);
+}
+
+@media only screen and (min-width: 801px) {
+
+    /* hide the hamburger */
+    #hamburger {
+        display: none;
+    }
+
+    .optionsList2 {
+        display: none;
+    }
+
+    /* hide all the nav-buttons */
+    .listItem1 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* show everything with the hamburger class */
+    #hamburger {
+        display: block;
+    }
+
+    /* hide all the nav-buttons */
+    .listItem1 {
+        display: none;
+    }
+}
+
+/*Background text*/
+.backGroundText{
+    position: fixed;
+    margin-left: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgba(222, 219, 219, 0.265);
+    font-family: 'Asap', sans-serif;
+    font-size: 200px;
+    z-index:-1;
+}
+
+
+
+
+/*Controls*/
+.controls {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insideControls {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.controlsBtn {
+    color: rgba(255, 255, 255, 0.717);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.controlsBtn:hover {
+    color: rgba(255, 255, 255, 0.854);
+}
+
+
+#record,
+#shuffle {
+    font-size: 40px;
+    height: 50px;
+}
+
+#playMain {
+    font-size: 130px;
+    width: 150px;
+}
+
+
+
+
+/*...................*/
+
+
+.content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardList {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    float: left;
+    width: 29.85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+    margin-right: 18px;
+    margin-left: 18px;
+    padding: 10px;
+    border: solid rgba(0, 0, 0, 0) 1px;
+}
+.card p{
+    font-family: 'Rubik Wet Paint', cursive;
+    color: rgba(255, 255, 255, 0.706) !important;
+}
+.card:hover {
+    background-color: #78787856;
+}
+
+.cardIcon {
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.746);
+}
+
+.insideCard {
+    position: relative;
+    width: 90%;
+}
+
+.insideCard p {
+    font-size: large;
+    color: white;
+}
+
+.iconContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    padding: 10px;
+}
+
+.overlayBtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.303);
+    color: rgba(255, 255, 255, 0.779);
+    border: none;
+    border-radius: 50%;
+    width: 25%;
+    padding: 10px;
+    cursor: pointer;
+
+    display: none;
+}
+.overlayBtn:active{
+    background-color: rgba(0, 0, 0, 0.403);
+}
+
+/*volume sliders*/
+.slider {
+    -webkit-appearance: none;
+    height: 4px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #3d3d3d;
+    cursor: pointer;
+    border: solid white 1px;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #272727;
+    cursor: pointer;
+}
+
+
+#waterfallCard,#whaleCard,#radioCard,#jazzCard{
+    display: none;
+}
+
+
+/*info*/
+.infoPage{
+    background: rgba(0, 0, 0, 0.623);
+    text-align: center;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 100%100px;
+	border-top-right-radius: 100%100px;  
+    margin-top: 200px;
+    font-family: roboto;
+}
+#infoContent{
+    width: 60%;
+}
+#infoContent h1{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 70px;
+    font-weight: bold;
+}
+#infoPara{
+    margin-top: 50px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    margin-bottom: 200px;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer-distributed{
+	background: rgba(0, 0, 0, 0.745);
+	padding: 50px 60px 40px;
+	overflow: hidden;
+    color:white;
+    font-family: roboto;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+#footerLogo{
+    font-family: 'Rubik Moonrocks', cursive !important;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #343434;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+    cursor: pointer;
+}
+.footer-distributed form button:hover{
+	background-color:  #292c2c;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+
+

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Symphony Heaven</title>
+    <script src="https://kit.fontawesome.com/c8dd1ec934.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+
+    <video autoplay muted loop id="myVideo">
+        <source src="images/vid.webm" type="video/webm">
+    </video>
+    <div class="curtain">
+    </div>
+
+    <div class="backGroundText">
+        The <br> Symphony <br> Heaven
+    </div>
+    <div id="stickyNav">
+        <div id="navbar">
+
+            <div id="navTitle">
+                <i class="fa-solid fa-headphones-simple" id="headphone"></i>
+                <span style="margin-left: 15px;">sympHeaven</span>
+            </div>
+            <div id="options">
+                <ul class="optionsList">
+                    <li class="listItem listItem1" id="home"><a href="#" class="navbarLinks homeLink">HOME</a></li>
+                    <li class="listItem listItem1" id="info"><a href="#infolink" class="navbarLinks">INFO</a></li>
+                    <li class="listItem listItem1" id="about"><a href="#footerLink" class="navbarLinks">ABOUT</a></li>
+                    <li><button id="hamburger"><i class="fa-solid fa-bars"></i></button></li>
+                </ul>
+            </div>
+        </div>
+        <div id="options2">
+            <ul class="optionsList2">
+                <li class="listItem listItem2" id="home2"><a href="#" class="navbarLinks homeLink">HOME</a></li>
+                <li class="listItem listItem2" id="info2"><a href="#infolink" class="navbarLinks">INFO</a></li>
+                <li class="listItem listItem2" id="about2"><a href="#footerLink" class="navbarLinks">ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="controls">
+        <div class="insideControls">
+            <div><button class="controlsBtn" id="record"><i class="fa-solid fa-record-vinyl"></i></button></div>
+            <div><button class="controlsBtn paused" id="playMain"><i class="fa fa-play"></i></button></div>
+            <div><button class="controlsBtn" id="shuffle"><i class="fa fa-shuffle"></i></i></button></div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <ul id="cardList">
+            <!-- <li class="card">
+                <div class="insideCard" id="insideCardId">
+                    
+                    <div class="iconContainer" id="iconContainerId">
+                        <div class="icon" id="iconId">
+                            <button class="overlayBtn ${collection[i].id}Overlay">
+                                <audio src="tunes/rain.mp3" id="rainAudio" class="paused"></audio>
+                                <i class="fa fa-play"></i>
+                            </button>
+                            <i class="${collection[i].icon} cardIcon"></i>
+                        </div>
+                    </div>
+                    
+                    <p>rain</p>
+                    <div class="volumeSlider" id="volumeSliderId"><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
+                </div>
+            </li> -->
+
+        </ul>
+    </div>
+
+
+
+    <div class="infoPage">
+        <a id="infolink"></a>
+        <div id="infoContent">
+            <h1>THE SYMPHONY HEAVEN</h1>
+            <h2>A project by Prabhat Chaudhari</h2>
+            <p id="infoPara">
+                Nothing is more relaxing to hear than nature's sounds in the middle of a cold winter woodlands. <br>
+                Time seems to be slowing down and down as birds sing their lovely songs ,the breeze and riverstream
+                gently
+                rustles through the trees with its calming sound.
+                <br>
+                Or Imagine, The best season of the year is now—summer. Work, chilly evenings, and unpleasant weather are
+                enough for everyone. <br>
+                Let's take a trip and get to know nature. And in the evening, we unwind around a lovely bonfire enjoying
+                the
+                crackling of wood, cool breeze, maybe laying by a seashore where we hear humpbacks singing.
+                On a nice summer night, enjoy the wild.
+                <br>
+                Enjoy The ambience in this symphony heaven.
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer-distributed" >
+        <a id="footerLink"></a>
+        <div class="footer-left">
+
+            <div id="footerLogo">
+                <i class="fa-solid fa-headphones-simple" id="headphone"></i>
+                <span>sympHeaven</span>
+            </div>
+
+            <p class="footer-company-name">Company Name © 2022</p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.instagram.com/chaudhari_prabhat/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/prabhat-chaudhari-6684091a3/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/PrabhatChaudhari" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p>Drop a messege</p>
+
+            <form action="#" method="post">
+
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+
+            </form>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <script src="alter.js"></script>
+
+
+</body>
+
+</html>
